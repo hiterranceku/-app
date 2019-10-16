@@ -10,7 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+       NavigationView {
+        NavigationLink(destination: mainpage()){
+            VStack{
+                Image("小魚仙官")
+                    .resizable().renderingMode(.original)
+                Text("潤玉")
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.red)
+                    .multilineTextAlignment(.trailing)
+            }.navigationBarTitle("羅雲熙")
+        }
+        }
     }
 }
 
